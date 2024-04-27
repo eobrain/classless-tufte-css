@@ -100,7 +100,8 @@ hr {
     padding: 0;
 }
 
-p.subtitle {
+/* subtitle */
+h1 + p {
     font-style: italic;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -109,12 +110,9 @@ p.subtitle {
     line-height: 1;
 }
 
-.numeral {
+/* numeral */
+time {
     font-family: et-book-roman-old-style;
-}
-
-.danger {
-    color: red;
 }
 
 article {
@@ -142,25 +140,26 @@ p {
 }
 
 /* Chapter Epigraphs */
-div.epigraph {
-    margin: 5em 0;
-}
-
-div.epigraph > blockquote {
+blockquote > p {
     margin-top: 3em;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
-div.epigraph > blockquote,
-div.epigraph > blockquote > p {
+h2 + blockquote {
+    margin-top: 3.5em;
+    margin-bottom: 2em;
+}
+
+h2 + blockquote,
+blockquote > p {
     font-style: italic;
 }
 
-div.epigraph > blockquote > footer {
+blockquote > footer {
     font-style: normal;
 }
 
-div.epigraph > blockquote > footer > cite {
+h2 + blockquote > footer > cite {
     font-style: italic;
 }
 /* end chapter epigraphs styles */

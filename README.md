@@ -1,5 +1,8 @@
-Tufte CSS
+Classless Tufte CSS
 =========
+This is a modification of the original Tufte CSS to remove reliance on `class`
+attributes so it can be applied to purely semantic HTML.
+
 Edward Tufte uses a distinctive style in his handouts: simple, with well-set
 typography, extensive sidenotes, and tight integration of graphics and
 charts. `tufte-css` brings that style to HTML documents.
