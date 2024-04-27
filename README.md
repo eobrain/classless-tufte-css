@@ -1,5 +1,4 @@
-<style>@import url("https://eobrain.github.io/classless-tufte-css/tufte.css");</style>
-
+![plot](./css-hack.svg)
 
 Classless Tufte CSS
 =========
