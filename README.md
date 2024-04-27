@@ -1,3 +1,6 @@
+<style>@import url("https://eobrain.github.io/classless-tufte-css/tufte.css");</style>
+
+
 Classless Tufte CSS
 =========
 This is a modification of the original Tufte CSS to remove reliance on `class`
