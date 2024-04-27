@@ -323,9 +323,10 @@ td {
     border: 1px solid #ccc;
 }
 
-.sans {
+mark {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     letter-spacing: .03em;
+    background-color: inherit;
 }
 
 code, pre > code {
