@@ -222,7 +222,14 @@ figcaption {
     max-width: 40%;
 }
 
-figure.fullwidth figcaption {
+/* fullwidth */
+article > figure {
+    margin-top: -1rem;
+    margin-bottom: 0.7rem;
+}
+
+/* fullwidth */
+article > figure figcaption {
     margin-right: 24%;
 }
 
@@ -367,6 +374,8 @@ pre.fullwidth > code {
     width: 90%;
 }
 
+/* fullwidth */
+article > figure,
 .fullwidth {
     max-width: 90%;
     clear:both;
@@ -434,7 +443,7 @@ label.margin-toggle:not(.sidenote-number) {
     }
 
     figcaption,
-    figure.fullwidth figcaption {
+    article > figure figcaption {
         margin-right: 0%;
         max-width: none;
     }
