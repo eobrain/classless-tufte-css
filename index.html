@@ -39,9 +39,11 @@
           <footer><a href="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000hB">Edward Tufte, forum post, ‘Book design: advice and examples’ thread</a></footer>
         </blockquote>
         <p>As a bonus, this excerpt regarding the use of headings provides an example of block quotes. In Tufte CSS they are just lightly styled, semantically correct HTML using <code>blockquote</code> and <code>footer</code> elements. See page 20 of <a href="https://www.edwardtufte.com/tufte/books_vdqi">The Visual Display of Quantitative Information</a> for an example in print,</p>
-        <p><span class="newthought">In his later books</span>, Tufte starts each section with a bit of vertical space, a non-indented paragraph, and the first few words of the sentence set in small caps.</p>
+      </section>
+      <section>
+        <p>In his later books, Tufte starts each section with a bit of vertical space, a non-indented paragraph, and the first few words of the sentence set in small caps.</p>
         <aside><a href="http://www.edwardtufte.com/tufte/books_be"><em>Beautiful Evidence</em></a></aside>
-        <p>For this we use a span with the class <code>newthought</code>, as demonstrated at the beginning of this paragraph. Vertical spacing is accomplished separately through <code>&lt;section&gt;</code> tags. Be consistent: though we do so in this paragraph for the purpose of demonstration, do not alternate use of header elements and the <code>newthought</code> technique. Pick one approach and stick to it.</p>
+        <p>For this we simply start a <code>section</code> element with a paragraph (<code>p</code>), as demonstrated at the beginning of this section. Be consistent: though we do so in this paragraph for the purpose of demonstration, do not alternate starting sections with a header elements and starting sections with a paragraph element. Pick one approach and stick to it.</p>
 
         <h3 id="fundamentals--text">Text</h3>
         <p>Although paper handouts obviously have a pure white background, the web is better served by the use of slightly off-white and off-black colors. Tufte CSS uses <code>#fffff8</code> and <code>#111111</code> because they are nearly indistinguishable from their ‘pure’ cousins, but dial down the harsh contrast. We stick to the greyscale for text, reserving color for specific, careful use in figures and images.</p>

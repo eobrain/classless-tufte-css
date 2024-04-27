@@ -369,9 +369,10 @@ article > figure {
     clear:both;
 }
 
-span.newthought {
+section > p:first-child:first-line{
     font-variant: small-caps;
     font-size: 1.2em;
+    font-style: inherit;
 }
 
 input.margin-toggle {
