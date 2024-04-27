@@ -151,6 +151,96 @@
       </section>
 
       <section>
+        <h2 id="tables">Tables</h2>
+        <p>Tables are a necessary evil. They are a powerful way to present data, but they are also a powerful way to present data poorly. Tufte CSS provides a few simple styles to make tables more readable while keeping the focus on the data itself.</p>
+        <p>Tables should be used sparingly, and only when the data would be difficult to understand in paragraph form. If you find yourself using tables often, consider whether your data would be better presented in a different format, or whether you are providing too much data at once.</p>
+        <p>Tables in Tufte CSS are styled to be readable and clear, but not overly styled. They are not meant to be the focus of the page, but rather a way to present data in a structured way. The goal is to make the data easy to read and understand, not to make the table itself the focus of the page.</p>
+        <table>
+          <caption>
+            Front-end web developer course 2021
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Person</th>
+              <th scope="col">Most interest in</th>
+              <th scope="col">Age</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Chris</th>
+              <td>HTML tables</td>
+              <td>22</td>
+            </tr>
+            <tr>
+              <th scope="row">Dennis</th>
+              <td>Web accessibility</td>
+              <td>45</td>
+            </tr>
+            <tr>
+              <th scope="row">Sarah</th>
+              <td>JavaScript frameworks</td>
+              <td>29</td>
+            </tr>
+            <tr>
+              <th scope="row">Karen</th>
+              <td>Web performance</td>
+              <td>36</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row" colspan="2">Average age</th>
+              <td>33</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <p>Tables outside a section are centered in the full width of the page.</p>
+      </section>
+
+      <table>
+        <caption>
+          Front-end web developer course 2021
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Person</th>
+            <th scope="col">Most interest in</th>
+            <th scope="col">Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Chris</th>
+            <td>HTML tables</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <th scope="row">Dennis</th>
+            <td>Web accessibility</td>
+            <td>45</td>
+          </tr>
+          <tr>
+            <th scope="row">Sarah</th>
+            <td>JavaScript frameworks</td>
+            <td>29</td>
+          </tr>
+          <tr>
+            <th scope="row">Karen</th>
+            <td>Web performance</td>
+            <td>36</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="2">Average age</th>
+            <td>33</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <section>
         <h2 id="epilogue">Epilogue</h2>
         <p>Many thanks go to Edward Tufte for leading the way with his work. It is only through his kind and careful editing that this project accomplishes what it does. All errors of implementation are of course mine.</p>
       </section>

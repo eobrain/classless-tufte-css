@@ -179,8 +179,7 @@ blockquote footer {
 }
 
 section > p,
-section > footer,
-section > table {
+section > footer{
     width: 55%;
 }
 
@@ -303,9 +302,25 @@ article > fullwidth {
     width: 100%;
 }
 
-div.table-wrapper {
+xxtable {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article> table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
     overflow-x: auto;
     font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
+}
+th, td {
+    padding: 0.5rem;
+}
+td {
+    border: 1px solid #ccc;
 }
 
 .sans {
@@ -440,7 +455,6 @@ input.margin-toggle {
         cursor: pointer;
     }
 
-    div.table-wrapper,
     table {
         width: 85%;
     }
