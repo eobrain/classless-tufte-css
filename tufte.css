@@ -375,18 +375,14 @@ section > p:first-child:first-line{
     font-style: inherit;
 }
 
-input.margin-toggle {
-    display: none;
-}
-
-.iframe-wrapper {
+figure:has(iframe) {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     padding-top: 25px;
     height: 0;
 }
 
-.iframe-wrapper iframe {
+figure iframe {
     position: absolute;
     top: 0;
     left: 0;

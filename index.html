@@ -105,11 +105,11 @@
         <p>If you need a full-width figure, put it outside the <code>section</code> directly under an <code>article</code>, and it will take up (almost) the full width of the screen. This approach is demonstrated below using Edward Tufte’s English translation of the Napoleon’s March data visualization. From <em>Beautiful Evidence</em>, page 122-124.</p>
       </section>
       <section>
-        <p>One obstacle to creating elegant figures on the web is the difficulty of handling different screen sizes, especially on the fly. Embedded <code>iframe</code> elements are particularly troublesome. For these instances we provide a helper class, <code>iframe-wrapper</code>, the most common use for which is probably YouTube videos, e.g.</p>
-        <pre><code>&lt;figure class="iframe-wrapper"&gt;
+        <p>One obstacle to creating elegant figures on the web is the difficulty of handling different screen sizes, especially on the fly. Embedded <code>iframe</code> elements are particularly troublesome. For these instances simply put the <code>iframe</code>inside a <code>figure</code> element. The most common use for this is probably YouTube videos, e.g.</p>
+        <pre><code>&lt;figure&gt;
   &lt;iframe width="853" height="480" src="https://www.youtube.com/embed/YslQ2625TR4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/figure&gt;</code></pre>
-        <figure class="iframe-wrapper">
+        <figure>
           <iframe width="853" height="480" src="https://www.youtube.com/embed/YslQ2625TR4" frameborder="0" allowfullscreen></iframe>
         </figure>
         <p>You can use this class on a <code>div</code> instead of a <code>figure</code>, with slightly different results but the same general effect. Experiment and choose depending on your application.</p>
