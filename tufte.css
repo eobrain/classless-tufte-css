@@ -297,8 +297,9 @@ blockquote aside {
     text-align: left;
 }
 
-div.fullwidth,
-table.fullwidth {
+/* fullwidth */
+article > fullwidth,
+article > fullwidth {
     width: 100%;
 }
 
@@ -341,13 +342,13 @@ pre > code {
     display: block;
 }
 
-pre.fullwidth > code {
+/* fullwidth */
+article > fullwidth > code {
     width: 90%;
 }
 
 /* fullwidth */
-article > figure,
-.fullwidth {
+article > figure {
     max-width: 90%;
     clear:both;
 }
