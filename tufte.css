@@ -336,7 +336,7 @@ code, pre > code {
     -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
 }
 
-.sans > code {
+mark > code {
     font-size: 1.2rem;
 }
 
