@@ -1,5 +1,3 @@
-![plot](./css-hack.svg)
-
 Classless Tufte CSS
 =========
 This is a modification of the original Tufte CSS to remove reliance on `class`
