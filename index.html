@@ -43,7 +43,7 @@
       <section>
         <p>In his later books, Tufte starts each section with a bit of vertical space, a non-indented paragraph, and the first few words of the sentence set in small caps.</p>
         <aside><a href="http://www.edwardtufte.com/tufte/books_be"><em>Beautiful Evidence</em></a></aside>
-        <p>For this we simply start a <code>section</code> element with a paragraph (<code>p</code>), as demonstrated at the beginning of this section. Be consistent: though we do so in this paragraph for the purpose of demonstration, do not alternate starting sections with a header elements and starting sections with a paragraph element. Pick one approach and stick to it.</p>
+        <p>For this we simply start a <code>section</code> element with a paragraph (<code>p</code>), as demonstrated at the beginning of this section. Be consistent: though we do so in this section for the purpose of demonstration, do not alternate starting sections with a header elements and starting sections with a paragraph element. Pick one approach and stick to it.</p>
 
         <h3 id="fundamentals--text">Text</h3>
         <p>Although paper handouts obviously have a pure white background, the web is better served by the use of slightly off-white and off-black colors. Tufte CSS uses <code>#fffff8</code> and <code>#111111</code> because they are nearly indistinguishable from their ‘pure’ cousins, but dial down the harsh contrast. We stick to the greyscale for text, reserving color for specific, careful use in figures and images.</p>
@@ -66,14 +66,15 @@
             <footer>Richard P. Feynman, <cite>“What Do You Care What Other People Think?”</cite></footer>
           
             <p>I do not paint things, I paint only the differences between things.</p><footer>Henri Matisse, <cite>Henri Matisse Dessins: thèmes et variations</cite> (Paris, 1943), 37</footer></blockquote>
-        <p>If you’d like to introduce your page or a section of your page with some quotes, use epigraphs. Modeled after chapter epigraphs in Tufte’s books (particularly <em>Beautiful Evidence</em>), these are <code>blockquote</code> elements with a bit of specialized styling. Quoted text is italicized. The source goes in a <code>footer</code> element inside the <code>blockquote</code>. We have provided three examples in the epigraph of this section, demonstrating shorter and longer quotes, with and without a paragraph tag, and showing how multiple quotes within an epigraph fit together with the use of a wrapper class.</p>
+        <p>If you’d like to introduce your page or a section of your page with some quotes, use epigraphs. Modeled after chapter epigraphs in Tufte’s books (particularly <em>Beautiful Evidence</em>), these are <code>blockquote</code> elements with a bit of specialized styling that only happens when they are immediatly after a <code>h2</code> header element. Quoted text is italicized. The source goes in a <code>footer</code> element inside the <code>blockquote</code>. We have provided three examples in the epigraph of this section, demonstrating shorter and longer quotes, with and without a paragraph tag, and showing how multiple quotes within an epigraph fit together with the use of a wrapper class.</p>
       </section>
 
       <section>
         <h2 id="sidenotes">Sidenotes: Footnotes and Marginal Notes</h2>
         <p>One of the most distinctive features of Tufte’s style is his extensive use of sidenotes.<sup>3</sup></p>
         <aside><sup>3</sup> This is a sidenote.</aside>
-        <p>Sidenotes are like footnotes, except they don’t force the reader to jump their eye to the bottom of the page, but instead display off to the side in the margin. Perhaps you have noticed their use in this document already. You are very astute.</p>
+        <p>Sidenotes are like footnotes, except they don’t force the reader to jump their eye to the bottom of the page, but instead display off to the side in the margin, if the page is wide enough. Perhaps you have noticed their use in this document already. You are very astute.</p>
+        <aside>If the page is not wide enough to have a margin, such as on a phone, then the marginal material will be presented indented in the main flow.</aside>
         <p>Sidenotes are a great example of the web not being like print. On sufficiently large viewports, Tufte CSS uses the margin for sidenotes, margin notes, and small figures. On smaller viewports, elements that would go in the margin are hidden until the user toggles them into view. The goal is to present related but not necessary information such as asides or citations <em>as close as possible</em> to the text that references them. At the same time, this secondary information should stay out of the way of the eye, not interfering with the progression of ideas in the main text.</p>
         <p>Sidenotes consist of two elements: a superscript reference number that goes inline with the text, and a sidenote with content. To add the former, just put a label in a <code>sup</code> into the text where you want the reference to go, like so:</p>
         <pre><code>&lt;sup&gt;3&lt;/sup&gt;</code></pre>
