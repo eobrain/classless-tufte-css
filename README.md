@@ -24,7 +24,7 @@ To use Tufte CSS, just add the following to your HTML doc's
 head block:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eobrain/classless-tufte-css@v1.0.0/tufte.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eobrain/classless-tufte-css@v1.0.1/tufte.min.css"/>
 ```
 
 (See rhw [live version][1] for instructions for how to host the CSS and font files yourself.)
