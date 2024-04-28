@@ -330,10 +330,17 @@ mark {
 }
 
 code, pre > code {
+    background-color: #eeeee0;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 1.0rem;
     line-height: 1.42;
     -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
+}
+
+@media (prefers-color-scheme: dark) {
+    code, pre > code {
+        background-color: #2A2A2A;
+    }
 }
 
 mark > code {
