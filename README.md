@@ -27,7 +27,69 @@ head block:
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eobrain/classless-tufte-css@v1.0.1/tufte.min.css"/>
 ```
 
-(See rhw [live version][1] for instructions for how to host the CSS and font files yourself.)
+(See the [live version][1] for instructions for how to host the CSS and font files yourself.)
+
+Minimal Example
+-
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Title Goes Here</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eobrain/classless-tufte-css@v1.0.1/tufte.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <article>
+        <h1>Title Goes Here</h1>
+        <p>Subtitle goes Here</p>
+        <section>
+            <h2>Section Header goes here</h2>
+            <blockquote>
+                <p>Epigraph goes here</p>
+                <footer>Attribution goes here</footer>
+            </blockquote>
+            <p>Main text starts here</p>
+            <aside>Margin note goes here</aside>
+        </section>
+        <section>
+            <p>All-caps line goes here</p>
+            <ul>
+                <li>List item in margin</li>
+                <li>List item</li>
+            </ul>
+            <figure>
+                <img src="https://dummyimage.com/2000x200/" />
+                <figcaption>Inline figure</figcaption>
+            </figure>
+            <aside>
+                <figure>
+                    <img src="https://dummyimage.com/2000x200/" />
+                    <figcaption>Margin figure</figcaption>
+                </figure>
+            </aside>
+        </section>
+        <section>
+            <ul>
+                <li>Inline list item</li>
+                <li>List item</li>
+            </ul>
+        </section>
+        <figure>
+            <img src="https://dummyimage.com/2000x200/" />
+            <figcaption>Fullwidth figure</figcaption>
+        </figure>
+    </article>
+</body>
+
+</html>
+```
+See this [minimal example live][3].
+
 
 
 Project Scope and Status
@@ -79,3 +141,4 @@ Released under the MIT license. See [LICENSE](https://github.com/edwardtufte/tuf
 
 [1]: https://eobrain.github.io/classless-tufte-css/
 [2]: https://github.com/edwardtufte/tufte-css#contributing
+[3]: https://eobrain.github.io/classless-tufte-css/minimal-example.html
