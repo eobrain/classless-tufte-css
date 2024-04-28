@@ -11,22 +11,28 @@
   <body>
     <article>
       <h1 id="tufte-css">Classless Tufte CSS</h1>
-      <p>Dave Liepmann (with classless modifications by Eamonn O'Brien-Strain)</p>
+      <p>Dave Liepmann (with classless modifications by Éamonn O'Brien-Strain)</p>
       <section>
         <p>Classless Tufte CSS provides tools to style web articles using the ideas demonstrated by Edward Tufte’s books and handouts. Tufte’s style is known for its simplicity, extensive use of sidenotes, tight integration of graphics with text, and carefully chosen typography.</p>
-        <p>The original Tufte CSS was created by <a href="http://www.daveliepmann.com">Dave Liepmann</a> and is now an Edward Tufte project. The original idea was cribbed from <a href="https://tufte-latex.github.io/tufte-latex/">Tufte-<span class="latex">L<span class="latex-sup">a</span>T<span class="latex-sub">e</span>X</span></a> and <a href="http://rmarkdown.rstudio.com/tufte_handout_format.html">R Markdown’s Tufte Handout format</a>. We give hearty thanks to all the people who have contributed to those projects.</p>
-        <p>Classless Tufte CSS is a small modification by Eamonn O'Brien-Strain to remove reliance on <code>class</code> attributes, so that it can be applied to fully semantic HTML.</p>
-        <p>If you see anything that Tufte CSS could improve, we welcome your contribution in the form of an issue or pull request on the GitHub project: <a href="https://github.com/edwardtufte/tufte-css">tufte-css</a>. Please note the <a href="https://github.com/edwardtufte/tufte-css#contributing">contribution guidelines</a>.</p>
+        <p>The original Tufte CSS was created by <a href="http://www.daveliepmann.com">Dave Liepmann</a> and is now an Edward Tufte project. The original idea was cribbed from <a href="https://tufte-latex.github.io/tufte-latex/">Tufte-<span class="latex">L<span class="latex-sup">a</span>T<span class="latex-sub">e</span>X</span></a> and <a href="http://rmarkdown.rstudio.com/tufte_handout_format.html">R Markdown’s Tufte Handout format</a>. Dave gave hearty thanks to all the people who have contributed to those projects.</p>
+        <p>Classless Tufte CSS is a small modification by Éamonn O'Brien-Strain to remove reliance on <code>class</code> attributes, so that it can be applied to fully semantic HTML. Éamonn in turn gives a hearty thanks to Dave for all the work in putting together the Tufte CSS tools.</p>
+        <p>If you see anything that Classless Tufte CSS could improve, Éamonn welcomes your contribution in the form of an issue or pull request on the GitHub project: <a href="https://github.com/eobrain/classless-tufte-css">tufte-css</a>. Please note the <a href="https://github.com/eobrain/classless-tufte-css#contributing">contribution guidelines</a>.</p>
+        <p>The majority of the text on this page is by Dave. Éamonn has changed it only where the classless differences required.</p>
         <p>Finally, a reminder about the goal of this project. The web is not print. Webpages are not books. Therefore, the goal of Tufte CSS is not to say “websites should look like this interpretation of Tufte’s books” but rather “here are some techniques Tufte developed that we’ve found useful in print; maybe you can find a way to make them useful on the web”. Tufte CSS is merely a sketch of one way to implement this particular set of ideas. It should be a starting point, not a design goal, because any project should present their information as best suits their particular circumstances.</p>
       </section>
 
       <section>
         <h2 id="getting-started">Getting Started</h2>
-        <p>To use Tufte CSS, copy <code>tufte.css</code> and the <code>et-book</code> directory of font files to your project directory, then add the following to your HTML document’s <code>head</code> block:</p>
+        <p>To use Classless Tufte CSS, simply add the following to your HTML document’s <code>head</code> block:</p>
+        <pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eobrain/classless-tufte-css@v1.0.0/tufte.css"/&gt;</code></pre>
 
-        <pre><code>&lt;link rel="stylesheet" href="tufte.css"/&gt;</code></pre>
+        <aside>
+          Alternatively, you can download the CSS and font files and host them yourself.  copy <code>tufte.css</code> and the <code>et-book</code> directory of font files to your project directory, then add the following to your HTML document’s <code>head</code> block:
+          <pre><code>&lt;link rel="stylesheet" href="tufte.css"/&gt;</code></pre>
+          All other files in the repository can be ignored, as they are merely used by the demonstration document.
+        </aside>
 
-        <p>Now you just have to use the provided CSS rules, and the Tufte CSS conventions described in this document. For best results, View Source and Inspect Element frequently.</p>
+        <p>Now you just have to structure your semantic HTML as described in this document. For best results, View Source and Inspect Element frequently.</p>
       </section>
 
       <section>

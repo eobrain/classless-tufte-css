@@ -1,10 +1,10 @@
 {
   "name": "tufte-css",
-  "version": "1.8.0",
-  "description": "Tufte CSS provides tools to style web articles using the ideas demonstrated by Edward Tufte’s books and handouts. Edward Tufte uses a distinctive style in his handouts: simple, with well-set typography, extensive sidenotes, and tight integration of graphics and charts.",
+  "version": "1.0.0",
+  "description": "Classless Tufte CSS provides tools to style web articles written in semantic HTML using the ideas demonstrated by Edward Tufte’s books and handouts. Edward Tufte uses a distinctive style in his handouts: simple, with well-set typography, extensive sidenotes, and tight integration of graphics and charts.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edwardtufte/tufte-css.git"
+    "url": "git+https://github.com/eobrain/classless-tufte-css.git"
   },
   "keywords": [
     "tufte",
@@ -13,15 +13,18 @@
     "typography",
     "sidenotes"
   ],
-  "author": "Dave Liepmann",
+  "author": "Eamonn O'Brien-Strain",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/edwardtufte/tufte-css/issues"
+    "url": "https://github.com/eobrain/classless-tufte-css/issues"
   },
-  "homepage": "https://edwardtufte.github.io/tufte-css/",
+  "homepage": "https://eobrain.github.io/classless-tufte-css/",
   "files": [
-      "tufte.css",
-      "tufte.min.css",
-      "et-book/"
-  ]
+    "tufte.css",
+    "tufte.min.css",
+    "et-book/"
+  ],
+  "dependencies": {
+    "clean-css-cli": "^5.6.3"
+  }
 }
