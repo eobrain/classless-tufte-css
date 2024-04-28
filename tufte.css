@@ -367,6 +367,7 @@ aside > code {
 }
 
 pre > code {
+    padding: 0.45rem;
     font-size: 0.9rem;
     width: 52.5%;
     margin-left: 2.5%;
