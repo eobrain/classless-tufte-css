@@ -276,7 +276,11 @@ sup {
     font-size: 0.9rem;
 }
 
-aside {
+p + ul, p + ol, p + dl {
+    padding-left: 1rem;
+}
+
+aside, p + ul, p + ol, p + dl {
     margin-left: 53%;
     width: 24%;
     margin-top: -3rem;
@@ -285,6 +289,11 @@ aside {
     line-height: 1.3;
     vertical-align: baseline;
     position: absolute;
+}
+
+p + ul *, p + ol *, p + dl * {
+    font-size: 1.1rem;
+    line-height: 1.3;
 }
 
 figure aside {
@@ -441,21 +450,10 @@ figure iframe {
         width: 100%;
     }
 
-    aside {
-        margin-left: 40%;
-        width: 60%;
+    aside, p + ul, p + ol, p + dl {
+        margin-left: 20%;
+        width: 80%;
         margin-top: 0;
-        position: relative;
-    }
-
-    .margin-toggle:checked + aside {
-        display: block;
-        float: left;
-        left: 1rem;
-        clear: both;
-        width: 95%;
-        margin: 1rem 2.5%;
-        vertical-align: baseline;
         position: relative;
     }
 
