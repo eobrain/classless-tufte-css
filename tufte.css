@@ -374,6 +374,9 @@ pre > code {
     overflow-x: auto;
     display: block;
 }
+aside > pre > code {
+    width: 90%;
+}
 
 /* fullwidth */
 article > fullwidth > code {
