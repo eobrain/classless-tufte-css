@@ -138,7 +138,7 @@ p {
     vertical-align: baseline;
 }
 
-/* Chapter Epigraphs */
+/* Epigraphs are blockquotes immediately after an h2 */
 blockquote > p {
     margin-top: 3em;
     margin-bottom: 1em;
