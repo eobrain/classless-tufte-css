@@ -92,7 +92,7 @@ h3 {
 hr {
     display: block;
     height: 1px;
-    width: 55%;
+    width: 82.5%;
     border: 0;
     border-top: 1px solid #ccc;
     margin: 1em 0;
@@ -119,8 +119,15 @@ article {
 }
 
 section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+section > * {
+    grid-column: 1 / 2;
 }
 
 p,
@@ -168,19 +175,19 @@ blockquote {
 }
 
 blockquote p {
-    width: 55%;
+    width: 82.5%;
     margin-right: 40px;
 }
 
 blockquote footer {
-    width: 55%;
+    width: 82.5%;
     font-size: 1.1rem;
     text-align: right;
 }
 
 section > p,
 section > footer{
-    width: 55%;
+    width: 82.5%;
 }
 
 /* 50 + 5 == 55, to be the same width as paragraph */
@@ -202,7 +209,7 @@ figure {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    max-width: 55%;
+    max-width: 82.5%;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
     margin: 0 0 3em 0;
@@ -281,14 +288,11 @@ p + ul, p + ol, p + dl {
 }
 
 aside, p + ul, p + ol, p + dl {
-    margin-left: 53%;
-    width: 24%;
-    margin-top: -3rem;
+    grid-column: 2 / 3;
     margin-bottom: 0;
     font-size: 1.1rem;
     line-height: 1.3;
     vertical-align: baseline;
-    position: absolute;
 }
 
 p + ul *, p + ol *, p + dl * {
