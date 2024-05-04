@@ -45,14 +45,11 @@ html {
 }
 
 body {
-    width: 87.5%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 12.5%;
     font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     background-color: #fffff8;
     color: #111;
-    max-width: 1400px;
+    margin-left: 13%;
+    margin-right: 10.5%;
 }
 
 /* Adds dark mode */
@@ -63,10 +60,18 @@ body {
     }
 }
 
+p, h1, h2, h3, blockquote, aside, li, td, th {
+    max-width: 30em;
+}
+pre {
+    margin:0;
+    max-width: 80em;
+}
+
 h1 {
     font-weight: 400;
     margin-top: 4rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
     font-size: 3.2rem;
     line-height: 1;
 }
@@ -75,7 +80,7 @@ h2 {
     font-style: italic;
     font-weight: 400;
     margin-top: 2.1rem;
-    margin-bottom: 1.4rem;
+    margin-bottom: 0;
     font-size: 2.2rem;
     line-height: 1;
 }
@@ -92,18 +97,16 @@ h3 {
 hr {
     display: block;
     height: 1px;
-    width: 82.5%;
     border: 0;
     border-top: 1px solid #ccc;
-    margin: 1em 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
     padding: 0;
 }
 
 /* subtitle */
 h1 + p {
     font-style: italic;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     font-size: 1.8rem;
     display: block;
     line-height: 1;
@@ -116,16 +119,20 @@ time {
 
 article {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 64% 30%;
+    column-gap: 6%;
+    row-gap: 1.4rem;
 
-    padding: 5rem 0rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 section {
     display: grid;
     grid-template-columns: subgrid;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    row-gap: 1.4rem;
+    padding-top: 2rem;
+    padding-bottom: 1.4rem;
 }
 
 article > * {
@@ -144,10 +151,9 @@ ul {
 }
 
 p {
-    margin-top: 1.4rem;
-    margin-bottom: 1.4rem;
-    padding-right: 0;
     vertical-align: baseline;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* Epigraphs are blockquotes immediately after an h2 */
@@ -180,27 +186,21 @@ blockquote {
 }
 
 blockquote p {
-    width: 82.5%;
-    margin-right: 40px;
 }
 
 blockquote footer {
-    width: 82.5%;
     font-size: 1.1rem;
     text-align: right;
 }
 
 section > p,
 section > footer{
-    width: 82.5%;
 }
 
 /* 50 + 5 == 55, to be the same width as paragraph */
 section > dl,
 section > ol,
 section > ul {
-    width: 50%;
-    -webkit-padding-start: 5%;
 }
 
 dt:not(:first-child),
@@ -209,15 +209,14 @@ li:not(:first-child) {
 }
 
 figure {
-    padding: 0;
-    border: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top: 0;
+    border-bottom: 0;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    max-width: 82.5%;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-    margin: 0 0 3em 0;
+    margin-bottom: 3em;
 }
 
 figcaption {
@@ -229,18 +228,14 @@ figcaption {
     line-height: 1.6;
     vertical-align: baseline;
     position: relative;
-    max-width: 40%;
 }
 
 /* fullwidth */
 article > figure {
-    margin-top: -1rem;
-    margin-bottom: 0.7rem;
 }
 
 /* fullwidth */
 article > figure figcaption {
-    margin-right: 24%;
 }
 
 /* Links: replicate underline that clears descenders */
@@ -282,14 +277,12 @@ a:link::-moz-selection {
 
 /* Sidenotes, margin notes, figures, captions */
 img {
-    max-width: 100%;
 }
 sup {
     font-size: 0.9rem;
 }
 
 p + ul, p + ol, p + dl {
-    padding-left: 1rem;
 }
 
 aside, p + ul, p + ol, p + dl {
@@ -310,24 +303,18 @@ figure aside {
 }
 
 blockquote aside {
-    min-width: 59%;
     text-align: left;
 }
 
 /* fullwidth */
 article > fullwidth,
 article > fullwidth {
-    width: 100%;
 }
 
 xxtable {
-    margin-left: auto;
-    margin-right: auto;
 }
 
 article> table {
-    margin-left: auto;
-    margin-right: auto;
 }
 
 table {
@@ -335,7 +322,8 @@ table {
     font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
 }
 th, td {
-    padding: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 td {
     border: 1px solid #ccc;
@@ -378,23 +366,18 @@ aside > code {
 pre > code {
     padding: 0.45rem;
     font-size: 0.9rem;
-    width: 52.5%;
-    margin-left: 2.5%;
     overflow-x: auto;
     display: block;
 }
 aside > pre > code {
-    width: 90%;
 }
 
 /* fullwidth */
 article > fullwidth > code {
-    width: 90%;
 }
 
 /* fullwidth */
 article > figure {
-    max-width: 90%;
     clear:both;
 }
 
@@ -415,7 +398,6 @@ figure iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     height: 100%;
 }
 
