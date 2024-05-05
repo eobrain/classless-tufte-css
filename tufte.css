@@ -403,53 +403,69 @@ figure iframe {
 
 @media (max-width: 760px) {
     body {
-        width: 84%;
-        padding-left: 8%;
-        padding-right: 8%;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
+
+    article {
+        grid-template-columns: 30% 64%;
+    }
+
+    article > * {
+        grid-column: 1 / 3;
+    }
+    section > * {
+        grid-column: 1 / 3;
+    }
+    /* fullwidth */
+    article > figure {
+        grid-column: 1 / 3;
+    }
+
+    /* fullwidth */
+    article > figure figcaption {
+        grid-column: 1 / 3;
+    }
+
+    aside, p + ul, p + ol, p + dl {
+        grid-column: 2 / 3;
+        grid-row-end: span 1;
+    }
+    /* fullwidth */
+    article > fullwidth > code {
+        grid-column: 1 / 3;
+    }
+
 
     hr,
     section > p,
     section > footer,
     section > table {
-        width: 100%;
     }
 
     pre > code {
-        width: 97%;
     }
 
     section > dl,
     section > ol,
     section > ul {
-        width: 90%;
     }
 
     figure {
-        max-width: 90%;
     }
 
     figcaption,
     article > figure figcaption {
-        margin-right: 0%;
-        max-width: none;
     }
 
     blockquote {
-        margin-left: 1.5em;
-        margin-right: 0em;
     }
 
     blockquote p,
     blockquote footer {
-        width: 100%;
     }
 
     aside, p + ul, p + ol, p + dl {
-        margin-left: 20%;
-        width: 80%;
-        margin-top: 0;
-        position: relative;
     }
 
     label {
@@ -457,10 +473,8 @@ figure iframe {
     }
 
     table {
-        width: 85%;
     }
 
     img {
-        width: 100%;
     }
 }
