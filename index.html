@@ -24,14 +24,12 @@
       <section>
         <h2 id="getting-started">Getting Started</h2>
         <p>To use Classless Tufte CSS, simply add the following to your HTML document’s <code>head</code> block:</p>
-        <pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eobrain/classless-tufte-css@v1.0.1/tufte.min.css"/&gt;</code></pre>
-
         <aside>
           Alternatively, you can download the CSS and font files and host them yourself.  copy <code>tufte.css</code> and the <code>et-book</code> directory of font files to your project directory, then add the following to your HTML document’s <code>head</code> block:
           <pre><code>&lt;link rel="stylesheet" href="tufte.css"/&gt;</code></pre>
           All other files in the repository can be ignored, as they are merely used by the demonstration document.
         </aside>
-
+        <pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eobrain/classless-tufte-css@v1.0.1/tufte.min.css"/&gt;</code></pre>
         <p>Now you just have to structure your semantic HTML as described in this document. For best results, View Source and Inspect Element frequently.</p>
       </section>
 
@@ -110,9 +108,9 @@
         <p>Tufte emphasizes tight integration of graphics with text. Data, graphs, and figures are kept with the text that discusses them. In print, this means they are not relegated to a separate page. On the web, that means readability of graphics and their accompanying text without extra clicks, tab-switching, or scrolling.</p>
         <p>Figures should try to use the <code>figure</code> element, which by default are constrained to the main column. Don’t wrap figures in a paragraph tag. Any label or margin note goes in a regular margin note inside the figure. For example, most of the time one should introduce a figure directly into the main flow of discussion, like so:</p>
         <figure>
-          <aside>From Edward Tufte, <em>Visual Display of Quantitative Information</em>, page 92.</aside>
           <img src="img/exports-imports.png" alt="Exports and Imports to and from Denmark & Norway from 1700 to 1780" />
         </figure>
+        <aside>From Edward Tufte, <em>Visual Display of Quantitative Information</em>, page 92.</aside>
 
         <aside><img src="img/rhino.png" alt="Image of a Rhinoceros"/>F.J. Cole, “The History of Albrecht Dürer’s Rhinoceros in Zooological Literature,” <em>Science, Medicine, and History: Essays on the Evolution of Scientific Thought and Medical Practice</em> (London, 1953), ed. E. Ashworth Underwood, 337-356. From page 71 of Edward Tufte’s <em>Visual Explanations</em>.</aside>
         <p>But tight integration of graphics with text is central to Tufte’s work even when those graphics are ancillary to the main body of a text. In many of those cases, a margin figure may be most appropriate. To place figures in the margin, just wrap an image (or whatever) in a margin note inside a <code>p</code> tag, as seen to the right of this paragraph.</p>
