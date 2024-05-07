@@ -187,23 +187,10 @@ blockquote {
     font-size: 1.4rem;
 }
 
-blockquote p {
-}
-
 blockquote footer {
     font-size: 1.1rem;
     text-align: right;
     margin-bottom: 2.6rem;
-}
-
-section > p,
-section > footer{
-}
-
-/* 50 + 5 == 55, to be the same width as paragraph */
-section > dl,
-section > ol,
-section > ul {
 }
 
 dt:not(:first-child),
@@ -314,9 +301,6 @@ blockquote aside {
     text-align: left;
 }
 
-article > table {
-}
-
 table {
     overflow-x: auto;
     font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
@@ -370,8 +354,6 @@ pre > code {
     font-size: 0.9rem;
     overflow-x: auto;
     display: block;
-}
-aside > pre > code {
 }
 
 /* fullwidth */
@@ -437,44 +419,7 @@ figure iframe {
     }
 
 
-    hr,
-    section > p,
-    section > footer,
-    section > table {
-    }
-
-    pre > code {
-    }
-
-    section > dl,
-    section > ol,
-    section > ul {
-    }
-
-    figure {
-    }
-
-    figcaption,
-    article > figure figcaption {
-    }
-
-    blockquote {
-    }
-
-    blockquote p,
-    blockquote footer {
-    }
-
-    aside, p + ul, p + ol, p + dl {
-    }
-
     label {
         cursor: pointer;
-    }
-
-    table {
-    }
-
-    img {
     }
 }
