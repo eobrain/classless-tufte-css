@@ -321,6 +321,14 @@ mark {
     background-color: inherit;
 }
 
+@media (prefers-color-scheme: dark) {
+    mark {
+        background-color: #151515;
+        color: #ddd;
+    }
+}
+
+
 code, pre > code {
     background-color: #eeeee0;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
