@@ -156,20 +156,14 @@ p {
     margin-bottom: 0;
 }
 
+blockquote {
+    font-style: italic;
+}
+
 /* Epigraphs are blockquotes immediately after an h2 */
-blockquote > p {
+h2 + blockquote {
     margin-top: 2em;
     margin-bottom: 1em;
-}
-
-h2 + blockquote {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-h2 + blockquote,
-blockquote > p {
-    font-style: italic;
 }
 
 blockquote > footer {
@@ -187,8 +181,12 @@ blockquote {
     font-size: 1.4rem;
 }
 
+blockquote p {
+    margin-bottom: 1em;
+}
+
 blockquote footer {
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: right;
     margin-bottom: 2.6rem;
 }
@@ -282,13 +280,27 @@ li {
     margin: 1em;
 }
 
-aside {
+aside, p + blockquote {
     grid-column: 2 / 3;
     grid-row-end: span 3;
     margin-bottom: 0;
+    margin-right: 0;
     font-size: 1.1rem;
     line-height: 1.3;
     vertical-align: baseline;
+}
+
+blockquote p {
+    font-size: 1.1rem;
+    line-height: 1.3;
+}
+
+blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 5em;
+    margin-left: -0.6em;
+    margin-bottom: -0.8em;
 }
 
 p + ul *, p + ol *, p + dl * {
@@ -296,7 +308,7 @@ p + ul *, p + ol *, p + dl * {
     line-height: 1.3;
 }
 
-figure aside {
+figure aside, p + blockquote {
     margin-top: 0;
 }
 
@@ -356,7 +368,7 @@ h3 > code {
     font-size: 0.80em;
 }
 
-aside > code {
+aside > code, p + blockquote > code {
     font-size: 1rem;
 }
 
@@ -420,7 +432,7 @@ figure iframe {
         grid-column: 1 / 3;
     }
 
-    aside {
+    aside, p + blockquote {
         grid-column: 2 / 3;
         grid-row-end: span 1;
     }
