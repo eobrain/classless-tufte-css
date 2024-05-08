@@ -276,10 +276,13 @@ sup {
 }
 
 p + ul, p + ol, p + dl {
-    margin-left: -1.65em;
+    list-style-type: none;
+}
+li {
+    margin: 1em;
 }
 
-aside, p + ul, p + ol, p + dl {
+aside {
     grid-column: 2 / 3;
     grid-row-end: span 3;
     margin-bottom: 0;
@@ -417,7 +420,7 @@ figure iframe {
         grid-column: 1 / 3;
     }
 
-    aside, p + ul, p + ol, p + dl {
+    aside {
         grid-column: 2 / 3;
         grid-row-end: span 1;
     }
