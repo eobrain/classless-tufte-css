@@ -181,6 +181,10 @@ blockquote {
     font-size: 1.4rem;
 }
 
+blockquote p {
+    margin-bottom: 1em;
+}
+
 blockquote footer {
     font-size: 1rem;
     text-align: right;
