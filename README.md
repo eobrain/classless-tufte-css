@@ -24,7 +24,7 @@ To use Tufte CSS, just add the following to your HTML doc's
 head block:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eobrain/classless-tufte-css@v1.2.0/tufte.min.css"/>
+<link rel="stylesheet" href="https://unpkg.com/classless-tufte-css@1.2.0/tufte.min.css"/>
 ```
 
 (See the [live version][1] for instructions for how to host the CSS and font files yourself.)
@@ -39,7 +39,7 @@ Minimal Example
 <head>
     <meta charset="utf-8" />
     <title>Title Goes Here</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eobrain/classless-tufte-css@v1.2.0/tufte.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/classless-tufte-css@1.2.0/tufte.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
