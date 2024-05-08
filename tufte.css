@@ -182,7 +182,7 @@ blockquote {
 }
 
 blockquote footer {
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: right;
     margin-bottom: 2.6rem;
 }
@@ -284,6 +284,11 @@ aside, p + blockquote {
     font-size: 1.1rem;
     line-height: 1.3;
     vertical-align: baseline;
+}
+
+blockquote p {
+    font-size: 1.1rem;
+    line-height: 1.3;
 }
 
 blockquote:before {
