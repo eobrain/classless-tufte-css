@@ -25,7 +25,7 @@
     "et-book/"
   ],
   "scripts": {
-    "prepublish": "cleancss -o tufte.min.css tufte.css"
+    "prepublishOnly": "cleancss -o tufte.min.css tufte.css"
   },
   "dependencies": {
     "clean-css-cli": "^5.6.3"

@@ -52,6 +52,10 @@ body {
     margin-right: 10.5%;
 }
 
+img {
+    background-color: #fffff8;
+}
+
 /* Adds dark mode */
 @media (prefers-color-scheme: dark) {
     body {
