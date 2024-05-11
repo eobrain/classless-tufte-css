@@ -48,7 +48,7 @@ body {
     font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     background-color: #fffff8;
     color: #111;
-    margin-left: 13%;
+    margin-left: 12.5%;
     margin-right: 10.5%;
 }
 
@@ -93,7 +93,7 @@ h3 {
     font-style: italic;
     font-weight: 400;
     font-size: 1.7rem;
-    margin-top: 1rem;
+    margin-top: 0.6rem;
     margin-bottom: 0;
     line-height: 1;
 }
@@ -124,7 +124,7 @@ time {
 article {
     display: grid;
     grid-template-columns: 64% 30%;
-    column-gap: 6%;
+    column-gap: 4.75%;
     row-gap: 1.4rem;
 
     padding-top: 5rem;
@@ -136,7 +136,7 @@ section {
     grid-template-columns: subgrid;
     row-gap: 1.4rem;
     padding-top: 2rem;
-    padding-bottom: 1.4rem;
+    padding-bottom: 1.6rem;
 }
 
 article > * {
@@ -377,7 +377,8 @@ aside > code, p + blockquote > code {
 }
 
 pre > code {
-    padding: 0.45rem;
+    margin-left: 4.44%;
+    padding: 0.4rem 0.4rem 0 0.4rem;
     font-size: 0.9rem;
     overflow-x: auto;
     display: block;
@@ -389,7 +390,7 @@ article > fullwidth > code {
 }
 
 
-section > p:first-child:first-line{
+section + section > p:first-child:first-line{
     font-variant: small-caps;
     font-size: 1.2em;
     font-style: inherit;
