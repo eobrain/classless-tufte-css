@@ -285,7 +285,8 @@ img {
     max-width: 100%;
 }
 sup {
-    font-size: 0.9rem;
+    font-family: et-book-roman-old-style;
+    font-size: 1rem;
 }
 
 p + ul, p + ol, p + dl {
@@ -424,12 +425,13 @@ figure iframe {
 
 @media (max-width: 760px) {
     body {
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        width: 84%;
+        margin-left: 8%;
+        margin-right: 8%;
     }
 
     article {
-        grid-template-columns: 30% 64%;
+        grid-template-columns: 0.5% 93.5%;
     }
 
     article > * {
