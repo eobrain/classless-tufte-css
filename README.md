@@ -24,7 +24,7 @@ To use Tufte CSS, just add the following to your HTML doc's
 head block:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/classless-tufte-css@1.2.1/tufte.min.css"/>
+<link rel="stylesheet" href="https://unpkg.com/classless-tufte-css@1.3.0/tufte.min.css"/>
 ```
 
 (See the [live version][1] for instructions for how to host the CSS and font files yourself.)
@@ -39,7 +39,7 @@ Minimal Example
 <head>
     <meta charset="utf-8" />
     <title>Title Goes Here</title>
-    <link rel="stylesheet" href="https://unpkg.com/classless-tufte-css@1.2.1/tufte.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/classless-tufte-css@1.3.0/tufte.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -102,9 +102,12 @@ That means that JavaScript solutions, although often superior to pure CSS, are o
 Deploying
 -
 1. Make changes
-2. From shell, `npm install`
-2. From shell, `npx cleancss -o tufte.min.css tufte.css`
-3. Bump version in *package.json*
+2. Bump version in *package.json*, examples, and docs to new version with [semver][4] form `X.Y.Z`
+3. From shell, `npm install`
+4. Commit changes to git
+4. From shell: `git push`
+4. From shell: `git tag vX.Y.Z`
+4. From shell: `git push --tags`
 4. From shell: `npm publish`
 
 
@@ -142,3 +145,4 @@ Released under the MIT license. See [LICENSE](https://github.com/edwardtufte/tuf
 [1]: https://eobrain.github.io/classless-tufte-css/
 [2]: https://github.com/edwardtufte/tufte-css#contributing
 [3]: https://eobrain.github.io/classless-tufte-css/minimal-example.html
+[4]: https://semver.org/
