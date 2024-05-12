@@ -104,11 +104,11 @@ Deploying
 1. Make changes
 2. Bump version in *package.json*, examples, and docs to new version with [semver][4] form `X.Y.Z`
 3. From shell, `npm install`
+4. From shell: `npm publish`
 4. Commit changes to git
 4. From shell: `git push`
 4. From shell: `git tag vX.Y.Z`
 4. From shell: `git push --tags`
-4. From shell: `npm publish`
 
 
 Contributing
