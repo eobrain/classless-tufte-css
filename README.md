@@ -1,5 +1,6 @@
 Classless Tufte CSS
 =========
+
 This is a modification of the original Tufte CSS to remove reliance on `class`
 attributes so it can be applied to purely semantic HTML.
 
@@ -105,10 +106,10 @@ Deploying
 2. Bump version in *package.json*, examples, and docs to new version with [semver][4] form `X.Y.Z`
 3. From shell, `npm install`
 4. From shell: `npm publish`
-4. Commit changes to git
-4. From shell: `git push`
-4. From shell: `git tag vX.Y.Z`
-4. From shell: `git push --tags`
+5. Commit changes to git
+6. From shell: `git push`
+7. From shell: `git tag vX.Y.Z`
+8. From shell: `git push --tags`
 
 
 Contributing
